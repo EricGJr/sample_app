@@ -1,7 +1,7 @@
-=begin
 source 'https://rubygems.org'
 ruby '2.0.0'
 
+=begin
 gem 'rails', '4.0.5'
 
 group :development do
@@ -42,6 +42,10 @@ gem 'bootstrap-will_paginate', '0.0.9'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'rspec-rails', '2.13.1'
+	gem 'guard-rspec', '2.5.0'
+	gem 'spork-rails', '4.0.0'
+	gem 'guard-spork', '1.5.0'
+	gem 'childprocess', '0.3.6'
 end
 group :test do
 	gem 'selenium-webdriver', '2.35.1'
